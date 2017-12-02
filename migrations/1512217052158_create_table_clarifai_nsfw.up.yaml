@@ -1,0 +1,7 @@
+- args:
+    sql: CREATE TABLE "clarifai_nsfw"("sfw" numeric NOT NULL, "nsfw" numeric NOT NULL,
+      "pic_index" integer NOT NULL, PRIMARY KEY ("pic_index") )
+  type: run_sql
+- args:
+    name: clarifai_nsfw
+  type: add_existing_table_or_view
